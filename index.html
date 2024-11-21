@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Go</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top">
+        <div id="navbar-placeholder"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("navbar.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("navbar-placeholder").innerHTML = data;
+                    })
+
+            });
+        </script>
+
+    </header>
+    <main>
+        <section class="left">
+            <figure>
+                <img src="./images/go-equipment.png" alt="">
+                <figcaption>( Playing go ) </figcaption>
+            </figure>
+
+            <table>
+                <tr>
+                    <td>Trending</td>
+                    <td>From Chou destiny</td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td>Board game</td>
+                </tr>
+                <tr>
+                    <td>players</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Complexity</td>
+                    <td>Extremely high</td>
+                </tr>
+                <tr>
+                    <td>Stratigy</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Gaming time</td>
+                    <td>Vary from couple minutes to days</td>
+                </tr>
+                <tr>
+                    <td>Luck</td>
+                    <td>no</td>
+                </tr>
+                <tr>
+                    <td>Tech</td>
+                    <td>Stratigy, Memory, Obeservation, Judgement, Counting</td>
+                </tr>
+            </table>
+        </section>
+        <section class="right">
+            <h3>Some facts about Go：</h3>
+            <p>
+                It is said that the game of Go was invented around 2300 BC by Emperor Yao,
+                who created it to cultivate the temperament of his son, Dan Zhu. Dan Zhu was prideful,
+                arrogant, and impulsive, prompting his father to invent Go as a means to refine his character.
+
+            </p>
+        
+            <p>
+                Go features two types of pieces, black and white, with the player holding the black pieces going first.
+                Players alternately place their pieces on the intersections of a grid consisting of nineteen horizontal
+                and vertical lines. Once a piece is placed, it cannot be moved or removed except through capture.
+                The game proceeds by capturing territory and opponent pieces, with victory determined by the amount of
+                "territory"
+                enclosed.
+            </p>
+        
+            <p>
+                The rules of Go are simple and elegant, yet the gameplay is incredibly diverse and complex.
+                Mastery of the game requires extensive practice and study. The grandmaster of chess, Emanuel Lasker,
+                praised it, saying, "If there are intelligent beings in the universe, they must play Go."
+                Go is considered one of the most complex board games in the world, a complexity that was proven
+                to be PSPACE-hard by Robertson and Munro in 1978.
+            </p>
+        
+            <p>
+                As of mid-2008, there were more than 40 million Go players worldwide, with the vast majority in East
+                Asia.
+                By the end of 2020, the International Go Federation had 77 member nations and 5 associate members.
+            </p>
+            <hr />
+            <h3>Modern Go:</h3>
+            <p> After the Meiji Restoration, professional Go players lost the support of the shogunate
+                and began seeking new means of livelihood, leading to the emergence of newspaper Go tournaments
+                and the modern dan ranking system, and the establishment of the national Japan Go Association.
+                In the Showa era, Go Seigen and Minoru Kitani initiated the "New Fuseki" movement,
+                ushering in the era of modern Go. Subsequently, top-class players emerged from the Japanese Go scene,
+                such as Eio Sakata, Hideyuki Fujisawa, Gosei Toshiro, and later heroes like Hideo Otake,
+                Yoshio Ishida, Masaki Takemiya, and Kōichi Kobayashi.
+            </p>
+        
+            <p> In 1989, Korean player Cho Hunhyun won the first Ing Cup World Go Championship,
+                sparking a Go craze in Korea. Subsequently, a plethora of world Go tournaments appeared.
+                Among these, Lee Chang-ho from Korea emerged as the top player of the time. After 2006,
+                Lee Chang-ho’s performance declined, and new talents like Lee Sedol and Gu Li began to
+                challenge his dominance. The following years were marked by the rivalry between Gu Li and Lee Sedol.
+            </p>
+        
+            <p> In the 2010s, many Chinese players rose to prominence, including Jiang Weijie, Fan Tingyu,
+                Shi Yue, Mi Yuting, Chen Yaoye, Zhou Ruiyang, and Tan Xiao, who successively won world
+                championship titles.
+            </p>
+            <hr />
+            <h3>Go Culture:</h3>
+            <p> Over thousands of years of its dissemination, Go has gradually developed numerous technical terms,
+                some of which have entered common vocabulary, such as "shoukuan" (endgame). Almost every move in
+                Go has a corresponding technical term, and it is even possible to describe a local skirmish
+                entirely in text.
+            </p>
+        
+            <p>For example, "Black occupies the star point in the upper right corner,
+                White plays a small knight's move, Black plays a high approach two spaces away, White jumps one space
+                , Black follows by jumping, White makes a small knight's move into the corner,
+                Black blocks at the 3-3 point..." This passage vividly describes a common joseki using Go terminology.
+                Common terms include:</p>
+        
+            <ul>
+                <li><strong>Atari : </strong>When a stone has only one liberty, it is said to be in atari. Also known as
+                    "being ataried."</li>
+                <li> <strong>Liberty : </strong> The empty intersections directly adjacent to a stone. A single stone
+                    cannot have more
+                    than four liberties, but connected stones may have more than four liberties. Playing a stone that
+                    immediately reduces the opponent's liberties is called "putting in atari." </li>
+                <li> <strong>Capture : </strong>Stones without liberties are removed from the board, known as
+                    "capturing." </li>
+                <li><strong>Eye : </strong> Empty intersections surrounded by one player’s stones on the Go board are
+                    called "eyes."</li>
+                <li><strong>Territory : </strong> The total number of empty intersections (eyes) surrounded by living
+                    stones and the
+                    living stones themselves are called "territory."</li>
+                <li><strong>Area : </strong> The region enclosed by stones. </li>
+                <li> <strong>Ko : </strong> A situation where both players can alternately capture each other’s stones.
+                    Go rules state
+                    that during a ko fight, the player whose stone was captured cannot recapture immediately; they
+                    must make a move elsewhere to find ko threats, which forces the opponent to respond before they
+                    can recapture.
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

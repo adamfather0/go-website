@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Go | Korea</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../navbar.html")
+                .then(data => data.text())
+                .then(data => {
+                    document.getElementById("navbar-placeholder").innerHTML = data;
+                })
+        });
+    </script>
+
+    <main>
+        <section>
+            <p>
+                Korea Baduk Association (Hangul: 한국기원) The Korea Baduk Association is the governing body for
+                professional
+                Go (Baduk) in South Korea, with its history tracing back to the creation of the Seoul Baduk Association
+                by Cho Nam-chul in November 1945.
+            </p>
+            <p>
+                Cho Nam-chul went to Japan in 1937 to study Go under professional player Kitani Minoru, a 9-dan. Upon
+                his return to Korea in 1945, he established the Baduk Association. Traditionally, Koreans opened the
+                game with black stones. After founding the Korea Baduk Association, Cho convinced Koreans to use white
+                stones as the starting color. In 1956, he organized the "Kuksu Championship" to popularize Go in
+                society.
+            </p>
+
+            <h2>Notable Professional Go Players:</h3>
+                <div class="player">
+                    <h4>Cho Nam-chul</h4>
+                    <h5>Cho Nam-chul (Hangul: 조남철, November 30, 1923 – July 2, 2006) was a 9-dan professional Go player
+                        known as the father of modern Korean Go.</h5>
+                    <p>In 1946, he established the Seoul Baduk Association, marking the formal beginning of professional
+                        Go
+                        in Korea. In 1950, he organized the first modern Korean Go ranking tournament, with Cho ranked
+                        at
+                        3-dan and others at 1-dan. In 1955, he persuaded President Syngman Rhee to form a professional
+                        Go
+                        team and sent them to Taiwan for an international match against local players, where Korea won.
+                        This
+                        victory boosted national morale and raised Cho's profile in modern Go. Soon after, Korea's
+                        professional Go tournaments were established, and in 1968, the Seoul Baduk Association was
+                        restructured and renamed the Korea Baduk Association. Cho dominated Korean Go until Kim In
+                        returned
+                        from studying in Japan and took the lead. He was awarded 9-dan in 1983 and became the oldest
+                        player
+                        to enter a professional tournament main competition in 1994. His nephew, Cho Chikun, went on to
+                        become a top player in Japan.</p>
+                </div>
+                <div class="player">
+                    <h4>Lee Chang-ho</h4>
+                    <h5>Lee Chang-ho (Hangul: 이창호, born July 29, 1975) is a Go player from Jeonju, Jeollabuk-do, Korea.
+                        He is considered the second-generation leader of Korean Go and one of the greatest players in
+                        modern Go history.</h5>
+                    <p>Lee achieved 1-dan at age 11, just after Cho Hun-hyun's record. At age 15 years and six months,
+                        he won his first world championship, setting a record for the youngest world champion. In 1996,
+                        the Korea Baduk Association awarded him a promotion from 7-dan to 9-dan. Lee is recognized for
+                        his era of dominance from 1996 to 2006, which is known as the "Lee Chang-ho era." Over his
+                        career, he has won 17 world championships and 21 international titles, remaining at the top. His
+                        career spanned from 1992 to 2012, with a peak between 1996 and 2006. Lee has been nicknamed the
+                        "Guardian Spirit" for his performance in international Go team tournaments.</p>
+                </div>
+                <div class="player">
+                    <h4>Cho Hun-hyun</h4>
+                    <h5>Cho Hun-hyun (Hangul: 조훈현, March 10, 1953) is a renowned Korean Go player, a 9-dan professional
+                        in the Korea Baduk Association, and a nine-time world champion. He is considered a pioneer of
+                        modern Korean Go and is respected as the "Emperor of Go."</h5>
+                    <p>Cho is the mentor of Lee Chang-ho, a record-setting world champion, and the two are famously
+                        known as the "Cho-Lee duo." Along with Yoo Chang-hyuk and Seo Bong-soo, they are referred to as
+                        the "Four Kings of Korean Go." Born in Mokpo, Jeollanam-do, Cho became the youngest professional
+                        player in the association's history (at 9 years and 7 months). In 1963, he went to Japan to
+                        study Go under Kensaku Segoe and was promoted to 5-dan by the Japan Go Association in 1972.
+                        Returning to Korea for military service, Cho chose to stay and went on to become the Korean Go
+                        master, winning over 130 Korean domestic championships. In 1982, he achieved 9-dan. In 1989, he
+                        defeated Nie Weiping, a Chinese 9-dan, in the first Ing Cup, sparking a Go craze in Korea.</p>
+                </div>
+                <div class="player">
+                    <h4>Lee Se-dol</h4>
+                    <h5>Lee Se-dol (Hangul: 이세돌, born March 2, 1983) is a Korean 9-dan professional Go player from
+                        Bigeumdo, Sinan County, Jeollanam-do, also known as the "Prodigy of Bigeumdo."</h5>
+                    <p>He became famous early on with his impressive domestic performance, earning him the nickname
+                        "Unbeatable Prodigy." Known for his sharp and aggressive style, he eventually adopted a
+                        versatile playstyle, balancing offense and defense. His playstyle is sometimes called "zombie
+                        style" due to his ability to revive seemingly dead stones on the board. He frequently faced
+                        Chinese player Gu Li in matches from 2005 to 2010, and their rivalry attracted much attention.
+                        In 2016, he famously faced Google's AlphaGo software in a best-of-five series, winning one match
+                        and demonstrating that humans could still compete against AI.</p>
+                </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

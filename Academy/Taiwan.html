@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../navbar.html")
+                .then(data => data.text())
+                .then(data => {
+                    document.getElementById("navbar-placeholder").innerHTML = data;
+                })
+        });
+    </script>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <section class="taiwan">
+            <h3>About Haifeng </h3>
+            <p> In 1997, Mr. Lin Wenbo, driven by his passion for Go, decided to donate thirty million NT dollars to
+                establish a foundation dedicated to promoting Go. After consulting with national Go player Lin Haifeng,
+                who gave his full support and agreed to serve as the first chairman, the "Haifeng Cultural and
+                Educational Foundation" was established, initiating its mission to promote Go. Due to the significant
+                financial and manpower requirements for organizing professional and amateur competitions, the Haifeng
+                Foundation has been substantially supported by Chairman Lin Wenbo over the years, leading to rapid
+                growth. However, the scope of professional competitions was still insufficient, necessitating
+                organizational adjustments. Chairman Lin decided to merge the "Haifeng Cultural and Educational
+                Foundation" into the "Peison Cultural and Educational Foundation" to leverage synergies. </p>
+            <p> The Peison Cultural and Educational Foundation, another corporate entity funded by Chairman Lin Wenbo
+                and his family, has been actively involved in special education. With more abundant resources than the
+                Haifeng Cultural and Educational Foundation, the merger allowed the Haifeng Foundation to hand over the
+                promotion of Go to the Peison Foundation. The staff of the original Haifeng Foundation were also
+                reorganized to meet the needs of Go promotion, forming the "Haifeng Go Institute" to continue working on
+                the front lines of Go promotion. </p>
+            <hr />
+            <h3>Contact Information:</h3>
+            <ul>
+                <li>Address: 9th Floor, No. 105, Section 2, Dunhua South Road, Da'an District, Taipei City 106</li>
+                <li>Phone: (02) 2702-8898 ext. 131, 132</li>
+                <li> Transportation by MRT & Bus [Taipei Station]: From [Taipei MRT Station], take the [Bannan Line] to
+                    [Zhongxiao Dunhua Station], then take buses [906, 909, Dunhua Line, 285, 905] from [Renai Dunhua
+                    Intersection] to [Daan Junior High School]. </li>
+                <li> Transportation by MRT [Taipei Station]: From [Taipei MRT Station], take the [Tamsui-Xinyi Line]
+                    towards Xiangshan to [Xinyi Anhe Station], exit from Exit 2 towards Anhe Road, turn right at Lane
+                    171, Section 2, Anhe Road onto Dunhua South Road to reach the destination, a total of 750 meters
+                    (approximately a 10-minute walk). </li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+
+</html>

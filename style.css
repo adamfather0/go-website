@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0.5rem 0 0.5rem 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+header div.head {
+  padding: 1rem;
+  background-image: url(./images/background.png);
+  background-size: 40%;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  /* text-align: center; */
+  display: flex;
+}
+nav div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  list-style: none;
+  flex: 1 1 auto;
+  list-style: none;
+  /* display: inline; */
+  padding: 0 3vw 0 3vw;
+}
+
+nav div div a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav div div {
+  background-color: #333;
+  color: #fff;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0.8vw 3vw 0.8vw 3vw;
+}
+
+nav div div:hover {
+  background-color: #555;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-width: 2px;
+  border-color: #fff;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section {
+  padding: 1rem;
+}
+
+main section hr {
+  padding: 0.2rem 0rem 0.2rem 0rem;
+}
+
+p {
+  padding: 0.5rem 0;
+}
+
+section.left {
+  flex: 2 1 100px;
+}
+
+section.left figure {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+section.left img {
+  width: 100%;
+}
+
+section.left table td {
+  column-count: auto;
+}
+section.right {
+  flex: 3 1 300px;
+}
+
+.player {
+  margin: 2rem;
+  border: 3px solid burlywood;
+  padding: 0.5rem;
+}
+
+.player h4 {
+  font-size: 1.5rem;
+  color: rgb(0, 90, 91);
+  padding: 0.1rem 0;
+}
+
+.player h5 {
+  font-size: 1.05rem;
+  color: rgb(6, 120, 120);
+  padding: 0.1rem 0;
+}
+
+div.japan {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+div.japan .image {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+}
+
+div.japan .image img {
+  width: 100%;
+}
+
+div.japan .info {
+  flex: 3 1 600px;
+  padding: 2rem;
+}
+
+div.competition {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+div.competition div.text {
+  flex: 5 1 300px;
+}
+div.competition div.text h3 {
+  font-size: 1.5rem;
+  color: rgb(6, 120, 120);
+  padding: 0.1rem 0;
+}
+div.prize ul {
+  padding: 1rem;
+  flex: 1 1 100px;
+}
+
+#top_x_div {
+  flex: 3 1 400px;
+  width: 50%;
+  height: 100%;
+}
+
+div.prize {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: flex-start;
+}
+
+.china h3 {
+  font-size: 1.5rem;
+  color: rgb(12, 122, 92);
+}
+
+.china table {
+  width: 60%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.china table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.china table th {
+  background-color: rgb(12, 122, 92);
+  color: #fff;
+}
+
+.taiwan {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.taiwan p {
+  padding: 1rem;
+}
+.taiwan h3 {
+  font-size: 1.5rem;
+  color: rgb(12, 122, 92);
+}
+
+.taiwan ul {
+  padding: 1rem;
+}

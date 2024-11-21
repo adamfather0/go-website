@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart', 'bar'] });
+        google.charts.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+            var data = new google.visualization.arrayToDataTable([
+                ['Title', 'Prize Money (Million Yen)', { role: 'style' }],
+                ["Kisei", 45, 'color: #b87333'],
+                ["Meijin", 32, 'color: gold'],
+                ["Honinbo", 30, 'color: silver'],
+                ["Oza", 25, 'color: #e5e4e2'],
+                ["Tengen", 20, 'color: #cd7f32'],
+                ["Gosei", 15, 'color: #e5e4e2'],
+                ["judan", 13, 'color: #cd7f32']
+
+            ]);
+
+            var options = {
+                title: 'Prize Money of the Seven Major Titles in Japan',
+                width: 600,
+                legend: { position: 'none' },
+
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('top_x_div'));
+            chart.draw(data, options);
+        };
+    </script>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../navbar.html")
+                .then(data => data.text())
+                .then(data => {
+                    document.getElementById("navbar-placeholder").innerHTML = data;
+                })
+        });
+    </script>
+
+    <main>
+        <section>
+            <div class="japan">
+                <div class="image">
+
+                    <img src="../images/Nihon_Ki-in_Headquarter_(2016-05-05)_5.jpg" alt="">
+
+                </div>
+                <div class="info">
+                    <p>
+                        The Nihon Kiin (Nippon Kiin) is Japan's premier go organization, governing and promoting the
+                        game of go. With its headquarters in Tokyo, the Nihon Kiin oversees a network of professional go
+                        players numbering around 300. To ensure comprehensive coverage of the country, the organization
+                        has established regional headquarters in Nagoya and Osaka, serving the Chubu and Kansai regions,
+                        respectively.
+
+                    </p>
+                    <p>Founded in 1924 through the unification of Honinbo-mon and Hoensha, two influential go
+                        organizations of the time, the Nihon Kiin has played a pivotal role in shaping the landscape of
+                        Japanese go. Despite facing challenges from rival organizations, the Nihon Kiin has solidified
+                        its position as the dominant force in Japanese go. However, a notable split occurred in 1950
+                        when a group of Kansai-based players, led by Utarō Hashimoto, seceded to form the Kansai Kiin.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="competition">
+                <div class="text">
+                    <h3>Nihon Kiin Title Matches</h3>
+                    <p>
+                        The seven major go tournaments in Japan, ranked by prize money, are Kisei, Meijin, Honinbo, Oza,
+                        Tengen, Gosei, and Judan. The top three tournaments, Kisei, Meijin, and Honinbo, with the
+                        highest prize money, are collectively known as the "Three Great Titles." Among them, Kisei is
+                        the highest title. If a player wins all three titles, they are said to have achieved the "Grand
+                        Slam."
+                    </p>
+                    <p>There are many professional go tournaments, but what sets the "Seven Major Titles" apart? The
+                        biggest characteristic of the Seven Major Titles is that all professional players are eligible
+                        to participate, although the methods for determining challengers vary. In the Meijin and Honinbo
+                        tournaments, players must advance to the league stage after qualifying. Reaching the league
+                        stage is proof of being a top-level player.</p>
+                    <p>Here's a breakdown of the prize money for each title:</p>
+                </div>
+            </div>
+            <div class="prize">
+                <ul>
+                    <li>Kisei: 45,000,000 yen</li>
+                    <li>Meijin: 32,000,000 yen</li>
+                    <li>Honinbo: 30,000,000 yen</li>
+                    <li>Oza: 25,000,000 yen</li>
+                    <li>Tengen: 20,000,000 yen</li>
+                    <li>Gosei: 15,000,000 yen</li>
+                    <li>Judan: 13,000,000 yen</li>
+                </ul>
+                <div id="top_x_div"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
